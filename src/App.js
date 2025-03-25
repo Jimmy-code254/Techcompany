@@ -12,7 +12,7 @@ import SingleProduct from './components/SingleProduct';
 import PaymentMethods from './components/PaymentMethods';
 import Footer from './components/Footer';
 import AboutUs from './components/AboutUs';
-import "bootstrap-icons/font/bootstrap-icons.min.css"
+
 
 function App() {
   return (

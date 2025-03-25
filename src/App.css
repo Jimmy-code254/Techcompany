@@ -209,7 +209,7 @@ border-radius: 15px;
 }
 
 .stars {
-  background: url('/home/user/Desktop/JAMESKIMA/james_react_project/public/images/twinkling.webp') repeat;
+  
   animation: starsAnimation 50s linear infinite;
 }
 
@@ -219,7 +219,7 @@ border-radius: 15px;
 }
 
 .twinkling {
-  background: url('/home/user/Desktop/JAMESKIMA/james_react_project/public/images/stars.webp') repeat;
+ 
   animation: twinkleAnimation 20s linear infinite;
 }
 
