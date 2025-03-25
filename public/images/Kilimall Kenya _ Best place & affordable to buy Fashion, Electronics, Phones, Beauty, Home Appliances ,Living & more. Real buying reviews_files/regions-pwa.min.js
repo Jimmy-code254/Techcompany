@@ -1,0 +1,1 @@
+window.addEventListener("load",()=>{navigator.serviceWorker&&navigator.serviceWorker.register("/sw.js").then(function(e){console.info("Registered events at scope: ",e)}).catch(function(e){console.info("ServiceWorker registration failed: ",e)})});

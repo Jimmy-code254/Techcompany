@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.navbar-brand img {
+  height: 70px; /* Adjust height as needed */
+  width: auto;
+}
+.link1{
+  background-color: #ff6105;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 6px;
+  border: solid 2px green;
+  text-decoration: none;
+  align-items: center;
+  margin: 5px;
+}
+.link2{
+  background-color: #ff6105;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 6px;
+  border: solid 2px green;
+  text-decoration: none;
+  align-items: center;
+  margin: 5px;
+}
+.link3{
+  background-color: #ff6105;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 6px;
+  border: solid 2px green;
+  text-decoration: none;
+  align-items: center;
+  margin: 5px;
+}
+.link4{
+  background-color: #ff6105;
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 6px;
+  border: solid 2px green;
+  text-decoration: none;
+  align-items: center;
+  margin: 5px;
+}
+.App-header {
+  background-color: #e66814;
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+margin: 15px;
+padding: 15px;
+border-radius: 15px;
+border: solid 2px green;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.product_img{
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+.row{
+  background: #099ec4;
+  color: #ff6105;
+}
+.navbar-brand{
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: medium;
+  text-size-adjust: 25px;
+}
+
+.card-tt{
+  background: #ff6105;
+  border: solid 2px green;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-decoration-color: #d8e2e0;
+
+}
+.product_img{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  border-color: #ff6105;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin:15px ;
+border-radius: 15px;
+
+}
+.navbar{
+  position: fixed;
+}
+.product-item {
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.product-item h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.product-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Style the entire carousel container */
+.carousel {
+  max-width: 100%; /* Allow it to take up full width */
+  margin: 0 auto;  /* Center the carousel */
+}
+
+/* Define the size of the images in the carousel */
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 300px;  /* Define a fixed height for the carousel */
+}
+
+.carousel-item {
+  height: 100%;  /* Make sure the items fill the height */
+}
+
+.carousel-item img {
+  width: 100%;  /* Ensure the images are full width */
+  height: 100%;  /* Fill the height of the carousel */
+  object-fit: cover;  /* Maintain aspect ratio and cover the container */
+  object-position: center;  /* Ensure the image is centered */
+}
+
+/* Style for carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;  /* Make the controls more visible */
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.hero-section {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  overflow: hidden;
+}
+
+/* Animated Star Background */
+.stars, .twinkling {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.stars {
+  background: url('/home/user/Desktop/JAMESKIMA/james_react_project/public/images/twinkling.webp') repeat;
+  animation: starsAnimation 50s linear infinite;
+}
+
+@keyframes starsAnimation {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100px); }
+}
+
+.twinkling {
+  background: url('/home/user/Desktop/JAMESKIMA/james_react_project/public/images/stars.webp') repeat;
+  animation: twinkleAnimation 20s linear infinite;
+}
+
+@keyframes twinkleAnimation {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
+
+/* Hero Title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.highlight {
+  color: #ffcc00;
+}
+
+/* Animated Text */
+.animated-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.dynamic-text {
+  animation: fadeIn 3s infinite alternate;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0.6; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.1); }
+}
+
+.icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: #ffcc00;
+}
