@@ -2,34 +2,39 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <section className="row-jm">
-            <div className="col-md-12">
-                <div className="navbar navbar-expand-md navbar-light bg-light fixed-top">
-                    
-                    <Link to="/" className="navbar-brand">
-                        <img src="/images/logo1.jpg" alt="Primrose Tech Logo" width="150" height="auto" />
-                    </Link>
+        <nav className="navbar navbar-expand-md navbar-light bg-light px-4">
+            {/* Logo */}
+            <Link to="/" className="navbar-brand">
+                <img src="/images/logo1.jpg" alt="Primrose Tech Logo" width="150" />
+            </Link>
 
-                    <button className="navbar-toggler" data-bs-target="#prada" data-bs-toggle="collapse">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+            {/* Toggler for mobile view */}
+            <button 
+                className="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#prada" 
+                aria-controls="prada" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                <span className="navbar-toggler-icon"></span>
+            </button>
 
-                    <div className="collapse navbar-collapse" id="prada">
-                        <div className="navbar-nav">
-                            <Link to="/" className="link1">Home</Link>
-                            <Link to="/addproduct" className="link2">Add Product</Link>
-                            <Link to="/aboutus" className="link2">About Us</Link>
-                        </div>
-
-                        <div className="navbar-nav ms-auto">
-                            <Link to="/signin" className="link3">Log In</Link>
-                            <Link to="/signup" className="link4">Sign Up</Link>
-                        </div>
-                    </div>
+            {/* Collapsible nav links */}
+            <div className="collapse navbar-collapse" id="prada">
+                <div className="navbar-nav me-auto">
+                    <Link to="/" className="nav-link">Home</Link>
+                    <Link to="/addproduct" className="nav-link">Add Product</Link>
+                </div>
+                <div className="navbar-nav ms-auto">
+                    <Link to="/signin" className="nav-link">Log In</Link>
+                    <Link to="/signup" className="nav-link">Sign Up</Link>
+                    <Link to="/cart" className="nav-link">Cart</Link>
                 </div>
             </div>
-        </section>
+        </nav>
     );
-}
+};
 
 export default Navbar;

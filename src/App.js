@@ -21,7 +21,11 @@ function App() {
         <br/><br/>
         <br/><br/>
         <div>
-          <img src='/images/100008150.webp' alt='my image'/>
+        <img 
+  src="/images/100008150.webp" 
+  alt="my image" 
+  style={{ maxWidth: "100%", height: "auto", borderRadius: "10px" }}/>
+
         </div>
         <br/><br/>
         <div className="App">
